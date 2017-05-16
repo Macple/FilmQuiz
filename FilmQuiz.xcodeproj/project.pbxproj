@@ -13,6 +13,9 @@
 		353117331ECAFC7D0067DA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353117321ECAFC7D0067DA08 /* Assets.xcassets */; };
 		353117361ECAFC7D0067DA08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353117341ECAFC7D0067DA08 /* LaunchScreen.storyboard */; };
 		353117461ECB02CD0067DA08 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 353117451ECB02CD0067DA08 /* Podfile */; };
+		3531174B1ECB11C70067DA08 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531174A1ECB11C70067DA08 /* AppCoordinator.swift */; };
+		3531174D1ECB11D90067DA08 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531174C1ECB11D90067DA08 /* Coordinator.swift */; };
+		353117541ECB14BC0067DA08 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353117531ECB14BC0067DA08 /* Storyboards.swift */; };
 		4DF2966C2F35167157DCE866 /* Pods_FilmQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF7C988620C3DCBCF5833A4 /* Pods_FilmQuiz.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +30,9 @@
 		353117351ECAFC7D0067DA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		353117371ECAFC7D0067DA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		353117451ECB02CD0067DA08 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		3531174A1ECB11C70067DA08 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3531174C1ECB11D90067DA08 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		353117531ECB14BC0067DA08 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
 		E2AC33005DF904F0C7DAEB13 /* Pods-FilmQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmQuiz/Pods-FilmQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,15 +69,50 @@
 		3531172A1ECAFC7D0067DA08 /* FilmQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				353117521ECB146E0067DA08 /* Constants */,
+				353117491ECB119E0067DA08 /* Storyboards */,
+				353117481ECB11910067DA08 /* ViewControllers */,
+				353117471ECB11810067DA08 /* Coordinators */,
 				3531172B1ECAFC7D0067DA08 /* AppDelegate.swift */,
-				3531172D1ECAFC7D0067DA08 /* ViewController.swift */,
-				3531172F1ECAFC7D0067DA08 /* Main.storyboard */,
 				353117321ECAFC7D0067DA08 /* Assets.xcassets */,
-				353117341ECAFC7D0067DA08 /* LaunchScreen.storyboard */,
 				353117371ECAFC7D0067DA08 /* Info.plist */,
 				353117451ECB02CD0067DA08 /* Podfile */,
 			);
 			path = FilmQuiz;
+			sourceTree = "<group>";
+		};
+		353117471ECB11810067DA08 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				3531174A1ECB11C70067DA08 /* AppCoordinator.swift */,
+				3531174C1ECB11D90067DA08 /* Coordinator.swift */,
+			);
+			name = Coordinators;
+			sourceTree = "<group>";
+		};
+		353117481ECB11910067DA08 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3531172D1ECAFC7D0067DA08 /* ViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		353117491ECB119E0067DA08 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				353117341ECAFC7D0067DA08 /* LaunchScreen.storyboard */,
+				3531172F1ECAFC7D0067DA08 /* Main.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		353117521ECB146E0067DA08 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				353117531ECB14BC0067DA08 /* Storyboards.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 		48E4E450C09A7BDB757862AC /* Pods */ = {
@@ -104,6 +145,8 @@
 				353117261ECAFC7D0067DA08 /* Resources */,
 				3BA4341CA9C26732EB6B501E /* [CP] Embed Pods Frameworks */,
 				4BCF87AF5850D009CCDCEF53 /* [CP] Copy Pods Resources */,
+				3531174E1ECB12920067DA08 /* SwiftGen */,
+				3531174F1ECB12E20067DA08 /* Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -164,6 +207,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3531174E1ECB12920067DA08 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/SwiftGen/bin/swiftgen\" storyboards \"$PROJECT_DIR/FilmQuiz\" --templatePath \"$PROJECT_DIR/FilmQuiz/Storyboards.template\" --output \"$PROJECT_DIR/FilmQuiz/Storyboards.swift\" -t swift3";
+		};
+		3531174F1ECB12E20067DA08 /* Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = Swiftlint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
 		3BA4341CA9C26732EB6B501E /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,6 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3531174D1ECB11D90067DA08 /* Coordinator.swift in Sources */,
+				353117541ECB14BC0067DA08 /* Storyboards.swift in Sources */,
+				3531174B1ECB11C70067DA08 /* AppCoordinator.swift in Sources */,
 				3531172E1ECAFC7D0067DA08 /* ViewController.swift in Sources */,
 				3531172C1ECAFC7D0067DA08 /* AppDelegate.swift in Sources */,
 			);
@@ -342,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E2AC33005DF904F0C7DAEB13 /* Pods-FilmQuiz.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3LTJNCGGL3;
@@ -359,6 +434,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 03FF442CBFFD15AFC171AB29 /* Pods-FilmQuiz.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3LTJNCGGL3;
