@@ -20,6 +20,6 @@ final class AppCoordinator: Coordinator {
     }
 
     func start() {
-        //startChild(coordinator: MainCoordinator(with: navigationController))
+        startChild(coordinator: MainCoordinator(with: navigationController))
     }
 }

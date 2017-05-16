@@ -45,12 +45,21 @@ struct StoryboardScene {
   enum LaunchScreen: StoryboardSceneType {
     static let storyboardName = "LaunchScreen"
   }
-  enum Main: StoryboardSceneType {
+  enum Main: String, StoryboardSceneType {
     static let storyboardName = "Main"
 
-    static func initialViewController() -> ViewController {
-      guard let vc = storyboard().instantiateInitialViewController() as? ViewController else {
+    static func initialViewController() -> FilmQuiz.MainViewController {
+      guard let vc = storyboard().instantiateInitialViewController() as? FilmQuiz.MainViewController else {
         fatalError("Failed to instantiate initialViewController for \(self.storyboardName)")
+      }
+      return vc
+    }
+
+    case mainViewControllerScene = "MainViewController"
+    static func instantiateMainViewController() -> FilmQuiz.MainViewController {
+      guard let vc = StoryboardScene.Main.mainViewControllerScene.viewController() as? FilmQuiz.MainViewController
+      else {
+        fatalError("ViewController 'MainViewController' is not of the expected class FilmQuiz.MainViewController.")
       }
       return vc
     }

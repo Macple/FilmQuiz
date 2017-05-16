@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3531172C1ECAFC7D0067DA08 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531172B1ECAFC7D0067DA08 /* AppDelegate.swift */; };
-		3531172E1ECAFC7D0067DA08 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531172D1ECAFC7D0067DA08 /* ViewController.swift */; };
+		3531172E1ECAFC7D0067DA08 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531172D1ECAFC7D0067DA08 /* MainViewController.swift */; };
 		353117311ECAFC7D0067DA08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3531172F1ECAFC7D0067DA08 /* Main.storyboard */; };
 		353117331ECAFC7D0067DA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353117321ECAFC7D0067DA08 /* Assets.xcassets */; };
 		353117361ECAFC7D0067DA08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353117341ECAFC7D0067DA08 /* LaunchScreen.storyboard */; };
@@ -16,6 +16,8 @@
 		3531174B1ECB11C70067DA08 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531174A1ECB11C70067DA08 /* AppCoordinator.swift */; };
 		3531174D1ECB11D90067DA08 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3531174C1ECB11D90067DA08 /* Coordinator.swift */; };
 		353117541ECB14BC0067DA08 /* Storyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 353117531ECB14BC0067DA08 /* Storyboards.swift */; };
+		358D4B061ECB16C900588733 /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D4B051ECB16C900588733 /* MainCoordinator.swift */; };
+		358D4B081ECB175000588733 /* PortaitNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358D4B071ECB175000588733 /* PortaitNavigationController.swift */; };
 		4DF2966C2F35167157DCE866 /* Pods_FilmQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF7C988620C3DCBCF5833A4 /* Pods_FilmQuiz.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +26,7 @@
 		0CF7C988620C3DCBCF5833A4 /* Pods_FilmQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		353117281ECAFC7D0067DA08 /* FilmQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3531172B1ECAFC7D0067DA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3531172D1ECAFC7D0067DA08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3531172D1ECAFC7D0067DA08 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		353117301ECAFC7D0067DA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		353117321ECAFC7D0067DA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		353117351ECAFC7D0067DA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -33,6 +35,8 @@
 		3531174A1ECB11C70067DA08 /* AppCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3531174C1ECB11D90067DA08 /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		353117531ECB14BC0067DA08 /* Storyboards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storyboards.swift; sourceTree = "<group>"; };
+		358D4B051ECB16C900588733 /* MainCoordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
+		358D4B071ECB175000588733 /* PortaitNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PortaitNavigationController.swift; sourceTree = "<group>"; };
 		E2AC33005DF904F0C7DAEB13 /* Pods-FilmQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmQuiz/Pods-FilmQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -69,14 +73,15 @@
 		3531172A1ECAFC7D0067DA08 /* FilmQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				353117521ECB146E0067DA08 /* Constants */,
-				353117491ECB119E0067DA08 /* Storyboards */,
-				353117481ECB11910067DA08 /* ViewControllers */,
-				353117471ECB11810067DA08 /* Coordinators */,
 				3531172B1ECAFC7D0067DA08 /* AppDelegate.swift */,
-				353117321ECAFC7D0067DA08 /* Assets.xcassets */,
 				353117371ECAFC7D0067DA08 /* Info.plist */,
 				353117451ECB02CD0067DA08 /* Podfile */,
+				353117321ECAFC7D0067DA08 /* Assets.xcassets */,
+				353117521ECB146E0067DA08 /* Constants */,
+				353117471ECB11810067DA08 /* Coordinators */,
+				353117491ECB119E0067DA08 /* Storyboards */,
+				353117481ECB11910067DA08 /* ViewControllers */,
+				358D4B071ECB175000588733 /* PortaitNavigationController.swift */,
 			);
 			path = FilmQuiz;
 			sourceTree = "<group>";
@@ -86,6 +91,7 @@
 			children = (
 				3531174A1ECB11C70067DA08 /* AppCoordinator.swift */,
 				3531174C1ECB11D90067DA08 /* Coordinator.swift */,
+				358D4B051ECB16C900588733 /* MainCoordinator.swift */,
 			);
 			name = Coordinators;
 			sourceTree = "<group>";
@@ -93,7 +99,7 @@
 		353117481ECB11910067DA08 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				3531172D1ECAFC7D0067DA08 /* ViewController.swift */,
+				3531172D1ECAFC7D0067DA08 /* MainViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -288,9 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3531174D1ECB11D90067DA08 /* Coordinator.swift in Sources */,
+				358D4B061ECB16C900588733 /* MainCoordinator.swift in Sources */,
 				353117541ECB14BC0067DA08 /* Storyboards.swift in Sources */,
+				358D4B081ECB175000588733 /* PortaitNavigationController.swift in Sources */,
 				3531174B1ECB11C70067DA08 /* AppCoordinator.swift in Sources */,
-				3531172E1ECAFC7D0067DA08 /* ViewController.swift in Sources */,
+				3531172E1ECAFC7D0067DA08 /* MainViewController.swift in Sources */,
 				3531172C1ECAFC7D0067DA08 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
