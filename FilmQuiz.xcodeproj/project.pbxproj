@@ -12,9 +12,13 @@
 		353117311ECAFC7D0067DA08 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3531172F1ECAFC7D0067DA08 /* Main.storyboard */; };
 		353117331ECAFC7D0067DA08 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 353117321ECAFC7D0067DA08 /* Assets.xcassets */; };
 		353117361ECAFC7D0067DA08 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 353117341ECAFC7D0067DA08 /* LaunchScreen.storyboard */; };
+		353117461ECB02CD0067DA08 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 353117451ECB02CD0067DA08 /* Podfile */; };
+		4DF2966C2F35167157DCE866 /* Pods_FilmQuiz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CF7C988620C3DCBCF5833A4 /* Pods_FilmQuiz.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03FF442CBFFD15AFC171AB29 /* Pods-FilmQuiz.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmQuiz.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmQuiz/Pods-FilmQuiz.release.xcconfig"; sourceTree = "<group>"; };
+		0CF7C988620C3DCBCF5833A4 /* Pods_FilmQuiz.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FilmQuiz.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		353117281ECAFC7D0067DA08 /* FilmQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3531172B1ECAFC7D0067DA08 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3531172D1ECAFC7D0067DA08 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,8 @@
 		353117321ECAFC7D0067DA08 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		353117351ECAFC7D0067DA08 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		353117371ECAFC7D0067DA08 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		353117451ECB02CD0067DA08 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = SOURCE_ROOT; };
+		E2AC33005DF904F0C7DAEB13 /* Pods-FilmQuiz.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmQuiz.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmQuiz/Pods-FilmQuiz.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DF2966C2F35167157DCE866 /* Pods_FilmQuiz.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				3531172A1ECAFC7D0067DA08 /* FilmQuiz */,
 				353117291ECAFC7D0067DA08 /* Products */,
+				48E4E450C09A7BDB757862AC /* Pods */,
+				897D0D55A6B95F2FC84AD5E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +69,26 @@
 				353117321ECAFC7D0067DA08 /* Assets.xcassets */,
 				353117341ECAFC7D0067DA08 /* LaunchScreen.storyboard */,
 				353117371ECAFC7D0067DA08 /* Info.plist */,
+				353117451ECB02CD0067DA08 /* Podfile */,
 			);
 			path = FilmQuiz;
+			sourceTree = "<group>";
+		};
+		48E4E450C09A7BDB757862AC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E2AC33005DF904F0C7DAEB13 /* Pods-FilmQuiz.debug.xcconfig */,
+				03FF442CBFFD15AFC171AB29 /* Pods-FilmQuiz.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		897D0D55A6B95F2FC84AD5E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CF7C988620C3DCBCF5833A4 /* Pods_FilmQuiz.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3531173A1ECAFC7D0067DA08 /* Build configuration list for PBXNativeTarget "FilmQuiz" */;
 			buildPhases = (
+				B791442B42087866E2FB1DFC /* [CP] Check Pods Manifest.lock */,
 				353117241ECAFC7D0067DA08 /* Sources */,
 				353117251ECAFC7D0067DA08 /* Frameworks */,
 				353117261ECAFC7D0067DA08 /* Resources */,
+				3BA4341CA9C26732EB6B501E /* [CP] Embed Pods Frameworks */,
+				4BCF87AF5850D009CCDCEF53 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,11 +156,60 @@
 			files = (
 				353117361ECAFC7D0067DA08 /* LaunchScreen.storyboard in Resources */,
 				353117331ECAFC7D0067DA08 /* Assets.xcassets in Resources */,
+				353117461ECB02CD0067DA08 /* Podfile in Resources */,
 				353117311ECAFC7D0067DA08 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3BA4341CA9C26732EB6B501E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FilmQuiz/Pods-FilmQuiz-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4BCF87AF5850D009CCDCEF53 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FilmQuiz/Pods-FilmQuiz-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B791442B42087866E2FB1DFC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		353117241ECAFC7D0067DA08 /* Sources */ = {
@@ -261,11 +340,13 @@
 		};
 		3531173B1ECAFC7D0067DA08 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2AC33005DF904F0C7DAEB13 /* Pods-FilmQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3LTJNCGGL3;
 				INFOPLIST_FILE = FilmQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plewko.FilmQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -276,11 +357,13 @@
 		};
 		3531173C1ECAFC7D0067DA08 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03FF442CBFFD15AFC171AB29 /* Pods-FilmQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = 3LTJNCGGL3;
 				INFOPLIST_FILE = FilmQuiz/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.plewko.FilmQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -308,6 +391,7 @@
 				3531173C1ECAFC7D0067DA08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
